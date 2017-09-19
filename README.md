@@ -1,0 +1,1 @@
+# 1908 - Comparison of RESTEasy test options
