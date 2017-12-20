@@ -1,10 +1,5 @@
 package de.johzie.resteasy;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class User {
 
     private int id;
@@ -32,7 +27,6 @@ public class User {
         this.email = email;
     }
 
-    @XmlAttribute
     public int getId() {
         return id;
     }
@@ -41,7 +35,6 @@ public class User {
         this.id = id;
     }
 
-    @XmlElement
     public String getName() {
         return name;
     }
@@ -50,7 +43,6 @@ public class User {
         this.name = name;
     }
 
-    @XmlElement
     public String getUsername() {
         return username;
     }
@@ -59,7 +51,6 @@ public class User {
         this.username = username;
     }
 
-    @XmlElement
     public String getEmail() {
         return email;
     }
@@ -72,5 +63,4 @@ public class User {
     public String toString() {
         return "User [id=" + id + ", name=" + name + ", username=" + username + ", email=" + email + "]";
     }
-
 }
