@@ -42,6 +42,7 @@ public class UserResourceTest {
     public void testUserResourceWithHttpClient() throws Exception {
         // Given
         startHttpServerAndDeployApplication();
+
         Client client = ClientBuilder.newClient();
 
         User expectedUser = new User(1, "Sharp Roentgen", "sharo", "sharp@roentgen.com");
@@ -54,6 +55,7 @@ public class UserResourceTest {
 
         User currentUser = response.readEntity(User.class);
         assertThat(currentUser).isEqualToComparingFieldByField(expectedUser);
+
         stopHttpServer();
     }
 
