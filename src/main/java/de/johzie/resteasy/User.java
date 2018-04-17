@@ -1,7 +1,6 @@
 package de.johzie.resteasy;
 
 public class User {
-
     private int id;
 
     private String name;
@@ -20,7 +19,6 @@ public class User {
     }
 
     public User(int id, String name, String username, String email) {
-        super();
         this.id = id;
         this.name = name;
         this.username = username;

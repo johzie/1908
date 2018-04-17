@@ -17,7 +17,6 @@ import javax.ws.rs.core.Response;
 @Produces(MediaType.APPLICATION_JSON)
 @Path("users")
 public interface IUserResource {
-
     @GET
     List<User> getUsers();
 
@@ -34,5 +33,4 @@ public interface IUserResource {
 
     @DELETE
     Response remove(User user);
-
 }

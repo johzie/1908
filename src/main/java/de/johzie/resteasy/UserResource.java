@@ -10,7 +10,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
 public class UserResource implements IUserResource {
-
     private static Map<Integer, User> users = new HashMap<>();
 
     static {
@@ -25,8 +24,7 @@ public class UserResource implements IUserResource {
 
     @Override
     public User getUser(@PathParam("id") int id) {
-        User user = users.get(id);
-        return user;
+        return users.get(id);
     }
 
     @Override
